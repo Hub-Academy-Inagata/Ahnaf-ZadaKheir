@@ -1,0 +1,568 @@
+:root {
+  --daisy: #e8e4df;
+  --brown: #3f362c;
+  --gold: linear-gradient(164.38deg, #ffd06a -156.04%, #a37530 164.36%);
+}
+
+body {
+  font-family: "Clash Display", sans-serif;
+  font-family: "Archivo", sans-serif;
+  width: 100%;
+
+  /* Website */
+  position: relative;
+  height: 900px;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fixed-bg {
+  position: fixed;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+.socmed {
+  box-sizing: border-box;
+  padding: 36px 28px;
+
+  width: 375px;
+  height: 812px;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+
+  /* Brown */
+
+  background: #3f362c;
+  /* Daisy White */
+
+  border: 4px solid #e8e4df;
+  box-shadow: 12px 12px 120px rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.pattern {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.pattern img {
+  /* position: absolute; */
+  width: auto;
+  z-index: 40;
+}
+
+.contact-butt {
+  padding: 12px;
+
+  height: 46px;
+
+  /* Daisy White */
+
+  background: #e8e4df;
+  border-radius: 8px;
+
+  border: none;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* Ink Black */
+
+  color: #070504;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-butt:hover {
+  background: #a37530;
+  color: var(--daisy);
+  transition: all 0.2s ease-in-out;
+}
+
+.product-butt:hover {
+  scale: 1.05;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-butt {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  border: none;
+  overflow: hidden;
+
+  width: 147.5px;
+  height: 147px;
+
+  background: linear-gradient(
+    0deg,
+    rgba(232, 228, 223, 0.8),
+    rgba(232, 228, 223, 0.8)
+  );
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+  font-family: "Clash Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  /* Brown */
+
+  color: #3f362c;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-option {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.product-butt img {
+  max-width: 100%;
+}
+
+.copyright {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  /* identical to box height */
+
+  text-align: center;
+
+  margin: 0;
+}
+
+.title {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 769px) {
+  .fixed-bg {
+    position: fixed;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  .top {
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    width: full;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: auto;
+  }
+
+  .top button {
+    display: none;
+  }
+
+  .socmed {
+    display: block;
+    box-sizing: border-box;
+    padding: 30px 17px;
+
+    width: 330px;
+    height: 798px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50;
+    bottom: 50;
+
+    margin-top: 100px;
+    margin-bottom: 40px;
+    z-index: 100;
+
+    /* Brown */
+
+    background: #3f362c;
+    /* Daisy White */
+
+    border: 3px solid #e8e4df;
+    box-shadow: 12px 12px 120px rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+  }
+
+  .main {
+    padding-bottom: 30px;
+  }
+
+  #logoCircle {
+    height: 190px;
+  }
+
+  .pattern {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pattern img {
+    /* position: absolute; */
+    width: auto;
+    z-index: 40;
+  }
+
+  .contact-butt {
+    padding: 12px;
+
+    height: 46px;
+
+    /* Daisy White */
+
+    background: #e8e4df;
+    border-radius: 8px;
+
+    border: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: "Clash Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* Ink Black */
+
+    color: #070504;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact-butt:hover {
+    background: #a37530;
+    color: var(--daisy);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .product-butt:hover {
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .product-butt {
+    /* Auto layout */
+
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    overflow: hidden;
+
+    width: 125px;
+    height: 140px;
+
+    background: linear-gradient(
+      0deg,
+      rgba(232, 228, 223, 0.8),
+      rgba(232, 228, 223, 0.8)
+    );
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: "Clash Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    /* Brown */
+
+    color: #3f362c;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .product-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .copyright {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    /* identical to box height */
+
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .fixed-bg {
+    position: fixed;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  .top {
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    width: full;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    margin: auto;
+  }
+
+  .top button {
+    display: block;
+  }
+
+  .socmed {
+    display: block;
+    box-sizing: border-box;
+    padding: 30px 17px;
+
+    width: 372px;
+    height: 812px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50;
+    bottom: 50;
+
+    margin-top: 40px;
+    /* margin-bottom: 40px; */
+    z-index: 100;
+
+    /* Brown */
+
+    background: #3f362c;
+    /* Daisy White */
+
+    border: 3px solid #e8e4df;
+    box-shadow: 12px 12px 120px rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+  }
+  /* 
+  .main {
+    padding-bottom: 30px;
+  } */
+
+  #logoCircle {
+    height: 190px;
+  }
+
+  .pattern {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pattern img {
+    /* position: absolute; */
+    width: auto;
+    z-index: 40;
+  }
+
+  .contact-butt {
+    padding: 12px;
+
+    height: 46px;
+
+    /* Daisy White */
+
+    background: #e8e4df;
+    border-radius: 8px;
+
+    border: none;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: "Clash Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    /* Ink Black */
+
+    color: #070504;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .contact-butt:hover {
+    background: #a37530;
+    color: var(--daisy);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .product-butt:hover {
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .product-butt {
+    /* Auto layout */
+
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    overflow: hidden;
+
+    width: 125px;
+    height: 140px;
+
+    background: linear-gradient(
+      0deg,
+      rgba(232, 228, 223, 0.8),
+      rgba(232, 228, 223, 0.8)
+    );
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: "Clash Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    /* Brown */
+
+    color: #3f362c;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .product-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .copyright {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    /* identical to box height */
+
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}
